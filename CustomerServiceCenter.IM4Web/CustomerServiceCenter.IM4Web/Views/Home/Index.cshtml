@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>命运-冠位指定交易平台_命运-冠位指定交易-5173手游交易平台</title>
+    <meta content="5173命运-冠位指定交易平台，提供国内最专业、安全的命运-冠位指定游戏交易服务，快速、高效的命运-冠位指定交易尽在5173手机游戏交易平台！" name="description" />
+    <meta content="命运-冠位指定,命运-冠位指定交易平台,命运-冠位指定,命运-冠位指定交易,5173命运-冠位指定交易" name="keywords" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+
+    <link href="http://img01.5173cdn.com/common/build/2.00/css/common.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://img01.5173cdn.com/common/build/1.00/images/ico.ico" />
+
+    <link rel="stylesheet" href="http://img01.5173cdn.com/fed/build/2.00/css/fed.css" type="text/css">
+    <link href="http://images001.5173cdn.com/html/sy_list/css/header.css" type="text/css" rel="stylesheet">
+
+    <!-- 新增css样式 -->
+    <link rel="stylesheet" type="text/css" href="http://images001.5173cdn.com/view/css/v0/kf-center/index.css">
+
+     <!-- 头尾主站jQuery -->
+     <script type="text/javascript" src="http://img01.5173cdn.com/common/build/1.00/js/lib/jquery-1.5.2.min.js"></script>
+
+
+    <script type="text/javascript" async="" charset="utf-8" src="http://dl.ntalker.com/js/b2b/ntkfstat.js?siteid=bq_1000&amp;XNform=b2b"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="http://dl.ntalker.com/js/b2b/zh_cn.js?siteid=bq_1000&amp;v=nt6.92&amp;t=2018.03.09_161009" data-requiremodule="lang"></script>
+    <script type="text/javascript" async="async" charset="utf-8" src="http://dl.ntalker.com/js/b2b/chat.in.js?siteid=bq_1000&amp;v=nt6.92&amp;t=2018.03.09_161009" data-requiremodule="chatManage"></script>
+
+    <script type="text/javascript" async="async" charset="utf-8" src="http://dl.ntalker.com/js/b2b/mqtt31.js?siteid=bq_1000&amp;v=nt6.92&amp;t=2018.03.09_161009" data-requiremodule="MQTT"></script>
+
+    <script type="text/javascript" async="async" charset="utf-8" src="http://dl.ntalker.com/js/b2b/mqtt.chat.js?siteid=bq_1000&amp;v=nt6.92&amp;t=2018.03.09_161009" data-requiremodule="Connection"></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="http://images001.5173cdn.com/view/css/v0/common/huanxinservice/huanxin.message.css">
+
+    <script type="text/javascript" src="http://images001.5173cdn.com/html/huanxinservice/js/webim.config.js"></script>
+    <script type="text/javascript" src="http://images001.5173cdn.com/html/huanxinservice/js/strophe-1.2.8.min.js"></script>
+    <script type="text/javascript" src="http://images001.5173cdn.com/html/huanxinservice/js/websdk-1.4.5.js"></script>
+    <script type="text/javascript" src="http://images001.5173cdn.com/html/huanxinservice/js/huanxin.js"></script> 
+
+</head>
+
+<body>
+    <div class="header header_index950">
+        <!-- 顶部登陆条+快捷菜单条 -->
+        <div id="J_GlobalTop"></div>
+        <!--网站Logo+四级联动搜索条-->
+        <div class="header_box w1200 clearfix ">
+            <h1 class="logo">
+                <a href="http://www.5173.com" class="logo_5173"></a>
+            </h1>
+            <!-- 四级联动游戏选择 -->
+            <div class="game_select game_select_main clearfix" id="gameSelectV2">
+                <form id="gsForm" method="get" class="clearfix">
+                    <div class="game_select_box" id="gameSelectBox">
+                        <ul class="tab_menu">
+                            <li class="current">
+                                <a href="#multipleSearch">普通搜索</a>
+                            </li>
+                            <li>
+                                <a href="#simpleSearch">简单搜索</a>
+                            </li>
+                        </ul>
+                        <div class="tab_box clearfix" id="multipleSearch">
+                            <!-- 游戏选择菜单 -->
+                            <ul class="gs_menu" id="gsMenu">
+                                <li id="gs_game" class="gs_name arrow" title="选择游戏名称">游戏名称</li>
+                                <li id="gs_operator" class="gs_operators arrow" title="选择运营商" style="display: none"> 运营商</li>
+                                <li id="gs_area" class="gs_area arrow" title="选择游戏区">游戏区</li>
+                                <li id="gs_server" class="gs_server arrow" title="选择游戏服务器">游戏服务器</li>
+                                <li id="gs_type" class="gs_type arrow" title="选择分类">全部分类</li>
+                                <li class="hide1">
+                                    <input type="hidden" id="hide_game" value="" />
+                                    <input type="hidden" id="hide_operator" name="op" value="" />
+                                    <input type="hidden" id="hide_area" name="ga" value="" />
+                                    <input type="hidden" id="hide_server" name="gs" value="" />
+                                    <input type="hidden" id="hide_type" name="cate" value="" />
+                                    <input type="hidden" id="gsKeyword" name="keyword" value="" />
+                                </li>
+                                <li class="gs_search_item">
+                                    <input class="gs_search_box" id="gsSearchBox" type="text" placeholder="请输入任意关键字" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_box clearfix tab_box_reset hide" id="simpleSearch">
+                            <div class="simple_search_box">
+                                <input type="text" class="simple_search_input" id="simpleSearchInput" placeholder="关键字找游戏、搜区服、寻商品" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_box">
+                        <input class="gs_search_btn" id="gsSearchBtn" type="submit" value="搜索" />
+                    </div>
+                </form>
+                <!-- 游戏选择列表 -->
+                <div class="gs_box" id="gsBox">
+                </div>
+                <ul class="hot_game_list"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <!--通用上方引导-->
+        <div class="clearfix header-ul">
+            <ul class="main-width clearfix">
+                <li class="btn-group">
+                    <a href="javascript:void (0)" target="_blank">我的5173</a>
+                </li>
+                <li class="item">
+                    <a href="http://sy.5173.com/" target="_blank">首页</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">金币交易</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">帐号交易</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target=" _blank">装备交易</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">手游交易</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">游戏代练</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">点卡交易</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">帐号租赁</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void (0)" target="_blank">热门页游</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- vue -->
+    <div class="container">
+        <!-- 位置 -->
+        <div class="pos-box main-width">
+            <span class="pos-name">您的位置 : </span>
+            <a class="pos-item active" href="http://www.5173.com/"></a>首页</a>
+            <span class="pos-arrow">></span>
+            <a class="pos-item active" href="http://user.5173.com/Default.aspx">我的5173</a>
+            <span class="pos-arrow">></span>
+            <a class="pos-item" href="javascript:;">我是卖家</a>
+            <span class="pos-arrow">></span>
+            <a class="pos-item" href="http://trade.5173.com/html/seller/orders.html">卖家订单</a>
+        </div>
+    </div>
+
+<script type="text/javascript" src="./js/manifest.js?v=d06b24a702f84d67d75e"></script><script type="text/javascript" src="./js/seller.js?v=6561d777667d0ac13a95"></script></body>
+<script type="text/javascript">
+    (function (w) {
+        var DEFAULT_VERSION = 8;
+        var ua = navigator.userAgent.toLowerCase();
+        var isIE = ua.indexOf("msie") > -1;
+        var safariVersion;
+        if (isIE) {
+            safariVersion = ua.match(/msie ([\d.]+)/)[1];
+            var sa = parseInt(safariVersion);
+            if (safariVersion <= DEFAULT_VERSION) {
+                //alert("ie8以下")
+                var d = document.createElement("div");
+                d.className = "browsehappy";
+                d.innerHTML = '<div style="width:100%;height:50px;font-size:16px;line-height:50px;text-align:center;background-color:#f8991d;color:#fff;margin-bottom:40px;position:relative;z-index:99"><strong>您的浏览器版本过低，推荐使用谷歌浏览器，商品交易就上www.5173.com</strong><a href="http://www.baidu.com/link?url=NjktdoIcAA4vUjcYVpBWZfQtRX9GwBVhPsIuBJjlpUTzw3CRtsSO79SsL66ak8FqapulvbG6fu7KDex-ugp5x79Qr2lTKG4Z4DpvWWU3uW_&wd=&eqid=b4970a9c0000e9cb000000045a16ca04" target="_blank"><span style="background:#4bad37;padding:3px 5px;margin-left:10px;color:#fff;">立即更新</span></a></div>';
+                var f = function () {
+                    var s = document.getElementsByTagName("body")[0];
+                    if ("undefined" == typeof (s)) {
+                        setTimeout(f, 10)
+                    } else {
+                        s.insertBefore(d, s.firstChild)
+                    }
+                };
+                f()
+            } else {
+                //alert("ie8以上")
+
+            }
+        } else {
+            // alert("非ie")
+
+        }
+
+    }(window));
+</script>
+
+
+
+
+<script type="text/javascript" src="http://img01.5173cdn.com/fed/build/2.00/js/fed-min.js"></script>
+
+</html>
